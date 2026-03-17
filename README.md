@@ -97,7 +97,7 @@ Step 11: The report was then published to Power BI Service.
 ---
 
 ##  Page 3: Comparison Analysis
-![Comparison](PASTE_IMAGE_LINK_3)
+![Comparison](https://github.com/Chaithrakulal-23/Sales-Performance-Data-Analysis-Dashboard/blob/bd5784e77659ed5b07c0959d010f16a7926686d7/ComparisionSalesProfitQuantity.png)
 
 **Insight:** Clear differences exist between product/category performance, helping identify high-performing segments and areas needing improvement.
 
