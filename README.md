@@ -90,7 +90,7 @@ Step 11: The report was then published to Power BI Service.
 ---
 
 ##  Page 2: Top/Bottom 5 Analysis
-![Top Bottom](PASTE_IMAGE_LINK_2)
+![Top Bottom](https://github.com/Chaithrakulal-23/Sales-Performance-Data-Analysis-Dashboard/blob/a1ca9505476bd6d95dbab3065018147dd3268941/TopBottom5Analysis.png)
 
 **Insight:** A small group of products drives the majority of sales and profit, while bottom-performing products contribute minimally and may require optimization or removal.
 
