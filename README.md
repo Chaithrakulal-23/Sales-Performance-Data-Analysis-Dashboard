@@ -104,7 +104,7 @@ Step 11: The report was then published to Power BI Service.
 ---
 
 ##  Page 4: Interaction Control
-![Interaction](PASTE_IMAGE_LINK_4)
+![Interaction](https://github.com/Chaithrakulal-23/Sales-Performance-Data-Analysis-Dashboard/blob/c351e74df06986d3ea0e66b12dc1567758a7240c/Interaction.png)
 
 **Insight:** Interactive filtering enables users to dynamically explore data, improving decision-making by focusing on specific segments.
 
