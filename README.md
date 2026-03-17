@@ -83,7 +83,7 @@ Step 11: The report was then published to Power BI Service.
 # Dashboard Snapshots
 
 ##  Page 1: Overview
-![Overview](PASTE_IMAGE_LINK_1)
+![Overview](https://github.com/Chaithrakulal-23/Sales-Performance-Data-Analysis-Dashboard/blob/4b00af71bcb162e010664516a8010e3a3d68d331/overview.png)
 
 **Insight:** Sales show variation across cities, with certain locations contributing significantly to overall revenue. Profit increases with Net Sales, indicating a strong positive relationship.
 
