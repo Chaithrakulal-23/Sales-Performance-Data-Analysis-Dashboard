@@ -24,25 +24,21 @@ This dashboard analyzes sales performance to help businesses understand product 
 
 The fact table contained several null values, which were handled by applying left joins with dimension tables to retrieve missing values where possible.
 
--Step 1: Loaded data from Excel into PowerBI.
+Step 5: Merged tables (Dim Customer, Dim Product, Dim Promotion) with Fact table using left join to handle null values.
 
-Step 2: Performed data transformation in Power Query.
+Step 6: Filled missing values for "Price per Unit" and "Discount Price" using data from Product and Promotion tables.
 
-Step 3: Merged tables (Dim Customer, Dim Product, Dim Promotion) with Fact table using left join to handle null values.
+Step 7: Created custom columns for Total Sales, Discount Value, Net Sales, and Profit.
 
-Step 4: Filled missing values for "Price per Unit" and "Discount Price" using data from Product and Promotion tables.
+Step 8: Built visuals to identify Top and Bottom 5 products by Sales, Profit, and Quantity Sold using filters.
 
-Step 5: Created custom columns for Total Sales, Discount Value, Net Sales, and Profit.
+Step 9: Developed interactive dashboards to analyze sales trends, profit distribution, and regional performance.
 
-Step 6: Built visuals to identify Top and Bottom 5 products by Sales, Profit, and Quantity Sold using filters.
+Step 10: Added slicers for dynamic filtering (Product, Date, Customer, Promotion).
 
-Step 7: Developed interactive dashboards to analyze sales trends, profit distribution, and regional performance.
+Step 11: Designed report layout with multiple pages for overview, comparison, and detailed analysis.
 
-Step 8: Added slicers for dynamic filtering (Product, Date, Customer, Promotion).
-
-Step 9: Designed report layout with multiple pages for overview, comparison, and detailed analysis.
-
-Step 10: Developed interactive dashboard using Power BI with DAX-based measures (SUM of Net Sales, Total Profit, Total Quantity Sold) 
+Step 12: Developed interactive dashboard using Power BI with DAX-based measures (SUM of Net Sales, Total Profit, Total Quantity Sold) 
 
        
        Sum of Net Sales = CALCULATE(SUM('Fact Table'[Net Sales  ]),ALL('Date Table 1'),USERELATIONSHIP('Date Table 2'[Date],'Fact Table'[Date (dd/mm/yyyy)])) 
@@ -51,7 +47,7 @@ Step 10: Developed interactive dashboard using Power BI with DAX-based measures 
 
        Total Quantity Sold = CALCULATE(SUM('Fact Table'[Units Sold]),ALL('Date Table 1'),USERELATIONSHIP('Date Table 2'[Date],'Fact Table'[Date (dd/mm/yyyy)]))
         
-Step 11: The report contains four pages.
+Step 13: The report contains four pages.
 
 ###  Overview Dashboard
 - Sales by City (Map visualization)  
@@ -111,100 +107,8 @@ Step 11: The report was then published to Power BI Service.
 ---
 
 ##  Page 5: Detailed Table View
-![Table](PASTE_IMAGE_LINK_5)
+![Table](https://github.com/Chaithrakulal-23/Sales-Performance-Data-Analysis-Dashboard/blob/a7c7c0329828b72f852a91bf384f7a6664529e65/Tablevisual.png)
 
 **Insight:** Provides granular-level data for deeper analysis, allowing validation of trends and identification of specific order-level patterns.
-# Snapshot of Dashboard (Power BI Service)
-
-![dashboard_snapo](https://user-images.githubusercontent.com/102996550/174096257-11f1aae5-203d-44fc-bfca-25d37faf3237.jpg)
-
- 
- # Report Snapshot (Power BI DESKTOP)
-
- 
-![Dashboard_upload](https://user-images.githubusercontent.com/102996550/174074051-4f08287a-0568-4fdf-8ac9-6762e0d8fa94.jpg)
-
-# Insights
-
-A single page report was created on Power BI Desktop & it was then published to Power BI Service.
-
-Following inferences can be drawn from the dashboard;
-
-### [1] Total Number of Customers = 129880
-
-   Number of satisfied Customers (Male) = 28159 (21.68 %)
-
-   Number of satisfied Customers (Female) = 28269 (21.76 %)
-
-   Number of neutral/unsatisfied customers (Male) = 35822 (27.58 %)
-
-   Number of neutral/unsatisfied customers (Female) = 37630 (28.97 %)
 
 
-           thus, higher number of customers are neutral/unsatisfied.
-           
-### [2] Average Ratings
-
-    a) Baggage Handling - 3.63/5
-    b) Check-in Service - 3.31/5
-    c) Cleanliness - 3.29/5
-    d) Ease of online booking - 2.88/5
-    e) Food & Drink - 3.21/5
-    f) In-flight Entertainment - 3.36/5
-    g) In-flight service - 3.64/5
-    h) In-flight Wifi service - 2.81/5
-    i) Leg room service - 3.37/5
-    j) On-board service - 3.38/5
-    k) Online boarding - 3.33/5
-    l) Seat comfort - 3.44/5
-    m) Departure & arrival convenience - 3.22/5
-  
-  while calculating average rating, null values have been ignored as they were not relevant for some customers. 
-  
-  These ratings will change if different visual filters will be applied.  
-  
-  ### [3] Average Delay 
-  
-      a) Average delay in arrival(minutes) - 15.09
-      b) Average delay in departure(minutes) - 14.71
-Average delay will change if different visual filters will be applied.
-
- ### [4] Some other insights
- 
- ### Class
- 
- 1.1) 47.87 % customers travelled by Business class.
- 
- 1.2) 44.89 % customers travelled by Economy class.
- 
- 1.3) 7.25 % customers travelled by Economy plus class.
- 
-         thus, maximum customers travelled by Business class.
- 
- ### Age Group
- 
- 2.1)  21.69 % customers belong to '0-25' age group.
- 
- 2.2)  52.44 % customers belong to '25-50' age group.
- 
- 2.3)  25.57 % customers belong to '50-75' age group.
- 
- 2.4)  0.31 % customers belong to '75-100' age group.
- 
-         thus, maximum customers belong to '25-50' age group.
-         
-### Customer Type
-
-3.1) 18.31 % customers have customer type 'First time'.
-
-3.2) 81.69 % customers have customer type 'returning'.
-       
-       thus, more customers have customer type 'returning'.
-
-### Type of travel
-
-4.1) 69.06 % customers have travel type 'Business'.
-
-4.2) 30.94 % customers have travel type 'Personal'.
-
-        thus, more customers have travel type 'Business'.
